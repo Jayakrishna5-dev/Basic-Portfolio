@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Syne:wght@400..800&family=Unbounded:wght@200..900&display=swap');
+
+:root{
+    --darkred: #000000;
+    --cream: #f1faee;
+    --verylightblue: #a3acbb;
+    --midblue: #364156;
+    --darkblue: #11151c;
+    --fontHeader: "Syne", serif;
+    --fontHeader2: "Unbounded", serif;
+    --fonttext: "Sora", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px; /* Default: 1rem = 16px */
+    scroll-behavior: smooth;
+}
+h1 {
+    font-size: 2.2rem; /* 40px */
+    font-family: var(--fontHeader);
+}
+h2 {
+    font-size: 1.8rem; /* 32px */
+    font-family: var(--fontHeader2);
+    text-align: center;
+}
+h3 {
+    font-size: 1.35rem; /* 28px */
+    font-family: var(--fontHeader2);
+}
+p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5; /* 24px line height */
+    font-family: var(--fonttext);
+}
+.welcome{
+    width: 100%;
+    position: relative;
+    background-color: #11151c;
+    padding: 20px 10px;
+}
+.welcome img{
+    display: block;
+    width: 70%;
+    max-width: 400px;
+    height: auto;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    margin: 0 auto;
+}
+.welcome .svg1{
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.welcome .svg2{
+    height: 85px;
+    width: 85px;
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+.welcome h1{
+    margin: 80px 0 20px 0;
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: var(--verylightblue);
+}
+.welcome p{
+    color: white;
+    margin-bottom: 20px;
+}
+.about{
+    padding: 0 0 20px 0;
+}
+.aboutitems{
+    padding: 30px 15px;
+}
+.about .heading, .education .heading, .photos .heading{
+    padding: 30px;
+    background: linear-gradient(25deg, #ffffff 40%, transparent 41%, transparent 59%, #ffffff 60%)  ,linear-gradient(90deg, transparent 45%, var(--verylightblue) 45%, var(--verylightblue) 55%, transparent 55%, transparent 20%, var(--verylightblue) 20%, var(--verylightblue) 30%,transparent 30%) ,linear-gradient(90deg, var(--verylightblue) 9%, transparent 10%);
+    background-size: 3em 3em;
+    background-color: #ffffff;
+    opacity: 1;
+}
+.about h2, .education .heading h2, .photos .heading h2{
+    text-align: center;
+    color: var(--darkred);
+    text-shadow: 5px 5px 2px white;
+}
+.about p{
+    background-color: var(--cream);
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 0px var(--midblue), -8px 8px 0px var(--verylightblue), -10px 10px 0px var(--midblue);
+    position: relative;
+    z-index: 2;
+}
+.about .svg3{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+}
+.skillsection .heading, .experience .heading, .projects .heading, .contact .heading{
+    background-color: black;
+    padding: 20px;
+}
+.skillsection .heading h2, .experience .heading h2, .projects .heading h2, .contact .heading h2{
+    color: white;
+    text-shadow: 5px -5px 2px var(--midblue), 10px -10px 2px var(--verylightblue); 
+}
+.skill{
+    width: 100%;
+    padding: 30px 10px;
+}
+.skill ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.skill ul li{
+    background-color: var(--verylightblue);
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+    width: 85%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonttext);
+    border: 4px solid var(--midblue); /* Transparent border as base */
+    border-radius: 10px;
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.experience{
+    padding-bottom: 20px;
+}
+.experienceItems h3{
+    margin: 20px 10px;
+}
+.xyz{
+    color: var(--darkblue);
+    text-decoration: underline;
+    text-decoration-color: var(--darkred);
+    text-decoration-thickness: 3px;
+}
+.abc{
+    color: var(--midblue);
+    text-decoration: underline;
+    text-decoration-color: var(--darkred);
+    text-decoration-thickness: 3px;
+}
+.experienceItems .e1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.e1img, .e2img{
+    height: 200px;
+    width: 600px;
+}
+.e1text, .e2text{
+    padding: 20px 0;
+}
+.e1img{
+    background-image: url(https://images.unsplash.com/photo-1553390774-b4822481c894?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.e1text p{
+    background-color: var(--darkblue);
+    padding: 10px 10px;
+    color: var(--verylightblue);
+}
+.e2img{
+    background-image: url(https://images.unsplash.com/photo-1524135329990-07660cd5bf10?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.e2text p{
+    background-color: var(--verylightblue);
+    padding: 10px 10px;
+    color: var(--darkblue);
+}
+.educationItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 30px;
+}
+.eduitem1, .eduitem2{
+    padding: 20px 10px;
+    height: 200px;
+    width: 50%;
+}
+.eduitem1{
+    background-color: var(--verylightblue);
+    color: var(--darkblue);
+    box-shadow: 10px -10px 0 var(--midblue), 15px -15px 0 var(--darkred);
+    transform: skewY(6deg);
+}
+.eduitem2{
+    background-color: var(--cream);
+    color: var(--darkred);
+    margin-top: 80px;
+    box-shadow: -10px -10px 0 var(--verylightblue), -20px -20px 0 var(--darkred);
+    transform: skewY(-10deg);
+}
+.projects .heading{
+    border-top: 5px solid var(--verylightblue);
+    padding-top: 30px;
+}
+.projectItems{
+    padding: 30px 10px;
+}
+.projectitem{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid var(--darkred);
+    margin: 15px 0;
+}
+.projectitem img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+.projectitem hr{
+    margin: 15px;
+}
+.projectitem h3{
+    margin-bottom: 10px;
+}
+.projectitem .pflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+.projectitem .pflex .live{
+    font-weight: bold;
+    color: var(--midblue);
+}
+.projectitem .pflex img{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    background-color: var(--darkred);
+    border-radius: 50%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+}
+.photoContent{
+    padding: 30px 0 0 0;
+}
+.photoContent p{
+    padding: 20px;
+}
+.photo-gallery{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, 150px);
+}
+.photo-gallery *{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.photo-gallery .img1{
+    background-image: url(https://images.unsplash.com/photo-1586348943529-beaae6c28db9?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.photo-gallery .img2{
+    background-image: url(https://images.unsplash.com/photo-1456930266018-fda42f7404a7?q=80&w=1595&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.photo-gallery .img3{
+    background-image: url(https://images.unsplash.com/photo-1513436539083-9d2127e742f1?q=80&w=2063&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.photo-gallery .img4{
+    background-image: url(https://images.unsplash.com/photo-1500514966906-fe245eea9344?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.contact .heading{
+    padding-top: 40px;
+}
+.con{
+    padding: 15px 10px 30px 10px;
+    background-color: var(--darkred);
+}
+form input, form label, form textarea, form button{
+    color: var(--verylightblue);
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 5px 0;
+    font-family: var(--fonttext);
+}
+form input, form textarea{
+    padding: 3px 5px;
+    color: black;
+}
+form button{
+    margin-top: 20px;
+    max-width: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--verylightblue);
+    box-shadow: 5px -5px 2px var(--midblue);
+    color: var(--darkblue);
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.u img{
+    height: 50px;
+    width: 50px;
+    background-color: var(--midblue);
+    border-radius: 50%;
+    padding: 5px;
+    position: fixed;
+    z-index: 3;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 3px -3px 0px var(--verylightblue), -4px 4px 0px var(--darkblue);
+}
+footer{
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--verylightblue);
+    background-color: var(--midblue);
+}
+footer p{
+    font-size: 0.8rem;
+    position: relative;
+    z-index: 5;
+}
+
+/*Responsive Web Desing*/
+
+/*Medium Mobile Screen*/
+@media screen and (min-width: 320px) and (max-width: 376px) {
+    .welcome, .aboutitems{
+        padding: 30px 20px;
+    }
+    .experienceItems h3{
+        margin: 30px 20px;
+    }
+    .eduitem1, .eduitem2{
+        padding: 20px 15px;
+        height: 220px;
+        width: 48%;
+    }
+}
+
+/*Large Mobile Screen*/
+@media screen and (min-width: 376px) and (max-width: 426px) {
+    .welcome{
+        padding: 50px 25px;
+    }
+    .experienceItems h3{
+        margin: 30px 25px;
+    }
+    .eduitem1, .eduitem2{
+        padding: 20px 15px;
+        height: 250px;
+        width: 45%;
+    }
+    .projectitem{
+        max-width: 350px;
+        padding: 10px;
+        margin: 15px auto;
+    }
+    .con{
+        padding-left: 60px;
+    }
+}
+
+/*Tablet Screen*/
+@media screen and (min-width: 426px) and (max-width: 769px) {
+    .welcome{
+        padding: 60px 50px;
+    }
+    .aboutitems, .e1, .e2{
+        max-width: 550px;
+        margin: auto;
+    }
+    .e1img, .e2img{
+        border-radius: 10px 0 0 10px;
+    }
+    .e1text p, .e2text p{
+        border-radius: 0 10px 10px 0;
+    }
+    .experienceItems h3{
+        margin: 30px 40px;
+    }
+    .experience{
+        padding-bottom: 40px;
+    }
+    .eduitem1, .eduitem2{
+        padding: 20px 15px;
+        height: 250px;
+        width: 25%;
+    }
+    .projectItems{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projectitem{
+        max-width: 350px;
+        padding: 15px;
+        margin: 20px auto;
+    }
+    .con{
+        padding-left: 30%;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+}
+
+/*Laptop Screen*/
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+    html {
+        font-size: 16px; /* 1rem = 18px */
+    }
+    h1 {
+        font-size: 3rem; /* 54px */
+    }
+    h2 {
+        font-size: 2.2rem; /* 45px */
+    }
+    h3 {
+        font-size: 1.5rem; /* 36px */
+    }
+    p {
+        font-size: 1.125rem; /* 20.25px */
+    }
+    .welcome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        padding: 90px 40px;
+    }
+    .item1{
+        position: relative;
+    }
+    .item2 h1, .item2 p{
+        max-width: 700px;
+    }
+    .welcome .svg1{
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        top: 80%;
+        left: 8%;
+    }
+    .welcome .svg2{
+        height: 85px;
+        width: 85px;
+        position: absolute;
+        top: -20%;
+        right: 3%;
+    }
+    .aboutitems, .e1, .e2{
+        max-width: 550px;
+        margin: auto;
+    }
+    .e1img, .e2img{
+        border-radius: 10px 0 0 10px;
+    }
+    .e1text p, .e2text p{
+        border-radius: 0 10px 10px 0;
+    }
+    .experienceItems h3{
+        margin: 30px 40px;
+    }
+    .experience{
+        padding-bottom: 40px;
+    }
+    .eduitem1, .eduitem2{
+        padding: 20px 15px;
+        height: 250px;
+        width: 20%;
+    }
+    .projectItems{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projectitem{
+        max-width: 400px;
+        padding: 15px;
+        margin: 20px auto;
+    }
+    .photo-gallery{
+        grid-template-rows: repeat(3, 300px);
+    }
+    .con{
+        padding-left: 40%;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+}
+
+/*Large Laptop Screen*/
+@media screen and (min-width:1025px) and (max-width: 1441px) {
+    html {
+        font-size: 18px; /* 1rem = 18px */
+    }
+    h1 {
+        font-size: 3rem; /* 54px */
+    }
+    h2 {
+        font-size: 2.2rem; /* 45px */
+    }
+    h3 {
+        font-size: 1.5rem; /* 36px */
+    }
+    p {
+        font-size: 1.125rem; /* 20.25px */
+    }
+    .welcome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        padding: 120px 50px;
+    }
+    .item1{
+        position: relative;
+    }
+    .item2 h1, .item2 p{
+        max-width: 750px;
+    }
+    .welcome .svg1{
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        top: 80%;
+        left: 8%;
+    }
+    .welcome .svg2{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: -20%;
+        right: 3%;
+    }
+    .aboutitems, .e1, .e2{
+        max-width: 550px;
+        margin: auto;
+    }
+    .e1img, .e2img{
+        border-radius: 10px 0 0 10px;
+    }
+    .e1text p, .e2text p{
+        border-radius: 0 10px 10px 0;
+    }
+    .experienceItems h3{
+        margin: 30px 100px;
+    }
+    .experience{
+        padding-bottom: 80px;
+    }
+    .eduitem1, .eduitem2{
+        padding: 20px 15px;
+        height: 300px;
+        width: 18%;
+    }
+    .projectItems{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projectitem{
+        max-width: 400px;
+        padding: 15px;
+        margin: 20px auto;
+    }
+    .photo-gallery{
+        grid-template-rows: repeat(3, 350px);
+    }
+    .con{
+        padding-left: 42%;
+    }
+    footer p{
+        font-size: 1.1rem;
+    }
+}
+
+/*Desktop Screen*/
+@media screen and (min-width:1441px) and (max-width: 2561px) {
+    html {
+        font-size: 20px; /* 1rem = 18px */
+    }
+    h1 {
+        font-size: 3rem; /* 54px */
+    }
+    h2 {
+        font-size: 2.2rem; /* 45px */
+    }
+    h3 {
+        font-size: 1.5rem; /* 36px */
+    }
+    p {
+        font-size: 1.125rem; /* 20.25px */
+    }
+    .welcome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        padding: 120px 50px;
+    }
+    .item1{
+        position: relative;
+    }
+    .item2 h1, .item2 p{
+        max-width: 750px;
+    }
+    .welcome .svg1{
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        top: 80%;
+        left: 8%;
+    }
+    .welcome .svg2{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: -20%;
+        right: 3%;
+    }
+    .aboutitems, .e1, .e2{
+        max-width: 750px;
+        margin: auto;
+    }
+    .e1img, .e2img{
+        border-radius: 10px 0 0 10px;
+    }
+    .e1text p, .e2text p{
+        border-radius: 0 10px 10px 0;
+    }
+    .experienceItems h3{
+        margin: 30px 700px;
+    }
+    .experience{
+        padding-bottom: 80px;
+    }
+    .educationItems{
+        padding: 90px 0;
+    }
+    .eduitem1, .eduitem2{
+        padding: 20px 15px;
+        height: 600px;
+        width: 20%;
+    }
+    .eduitem1 p, .eduitem2 p{
+        font-size: 2rem;
+    }
+    .projectItems{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projectitem{
+        max-width: 500px;
+        padding: 15px;
+        margin: 20px auto;
+    }
+    .photo-gallery{
+        grid-template-rows: repeat(3, 450px);
+    }
+    .con{
+        padding-left: 42%;
+    }
+    footer p{
+        font-size: 1.1rem;
+    }
+    .u img{
+        height: 80px;
+        width: 80px;
+        right: 20px;
+        bottom: 20px;
+    }
+}
